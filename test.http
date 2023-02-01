@@ -1,0 +1,38 @@
+@baseUrl = http://localhost:3000/api
+
+# Category
+
+# @name getAllPost
+GET {{baseUrl}}/categories
+
+###
+
+# @name getAllPost
+GET {{baseUrl}}/categories?_page=1&_limit=3
+
+###
+
+# @name addNewPost
+POST {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+    "title": "tuan anh",
+    "author": "typicode"
+}
+
+###
+
+# @name updatePost
+PUT {{baseUrl}}/categories/1
+Content-Type: application/json
+
+{
+    "title": "anh tuan",
+    "author": "typicode"
+}
+
+###
+
+# @name deletePost
+DELETE {{baseUrl}}/categories/1
